@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul id="messageList">
+
+        </ul>
+
+        <script>
+            var mess=[
+                {
+                    name:"san",
+                    message:"hi",
+                },
+                {
+                    name:"ra",
+                    message:"hi bro",
+                }
+            ]
+            index=0;
+            var ul=document.getElementById("messageList");
+            while(index<mess.length)
+            {
+                var currentMessage=mess[index];
+                ul.innerHTML= ul.innerHTML+ "<li>" + currentMessage.name + ":     "+ currentMessage.message+"      "+ currentMessage.time +"<li>"
+                index++; 
+            }
+        </script>
+    </body>
+    </html>
